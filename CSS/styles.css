@@ -34,10 +34,27 @@
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
+
+  font-family: Muli, sans-serif;
 }
 
 .list {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
 }
 
 /* header */
@@ -45,16 +62,33 @@ body {
 /* logo */
 .logo {
   color: var(--primary-logo-text-color);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+
+  text-decoration: none;
 }
 
 .logo-accennt {
   color: red;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.27;
+
+  text-decoration: none;
 }
 
 /* navigation */
 .nav-list .nav-item {
   color: var(--nav-text-color);
   opacity: 0.5;
+
+  font-size: 18px;
+  line-height: 1.28;
+
+  text-decoration: none;
 }
 
 .nav-list .nav-item.current {
@@ -64,20 +98,26 @@ body {
 
 /* <!-- unique content --> */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--title-text-color);
+/* hero */
+.hero {
+  font-size: 48px;
+  line-height: 1.17;
+}
+
+.hero-description {
+  font-size: 21px;
+  line-height: 1.5;
 }
 
 .button {
   color: var(--title-text-color);
-  /* color: var(--primary-button-text-color) */
-  /* background-color: var(--primary-bg-button-color) */
   background-color: var(--secondary-bg-button-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 3.3;
+
+  text-decoration: none;
 }
 
 .button.primary {
@@ -90,6 +130,56 @@ h6 {
   background-color: var(--secondary-bg-button-color);
 }
 
+/* <!-- Our services --> */
+
+.services-title {
+  font-size: 36px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.services-description {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.service-list h3 {
+  font-size: 24px;
+  line-height: 2.3;
+}
+
+.service-list p {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* <!-- Leading healthcare providers --> */
+
+.providers-title {
+  font-size: 36px;
+  line-height: 1.6;
+}
+
+.providers p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* <!-- Download our mobile apps --> */
+
+.app-title {
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.mobile-app > .app-description {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* <!-- testimonials --> */
+
 .customer-feedback {
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
 }
@@ -99,9 +189,54 @@ h6 {
   color: var(--testimonial-white-text-color);
 }
 
+.testimonial-title {
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.customer-name {
+  font-size: 22px;
+  line-height: 2.18;
+}
+
 .customer-position,
 .customer-desc {
   color: var(--testimonial-desc-white-text-color);
+}
+
+.customer-position {
+  font-size: 18px;
+  line-height: 2.67;
+  font-weight: 400;
+}
+
+.customer-desc {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.59;
+}
+
+/* <!-- Check out our latest article --> */
+
+.articles-title {
+  font-size: 36px;
+  line-height: 1.56;
+}
+
+.article-name {
+  font-size: 21px;
+  line-height: 1.52;
+}
+
+.article-desc {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.article-list a {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 /* footer */
@@ -111,6 +246,14 @@ h6 {
 
 .logo-footer-accent {
   color: var(--secondary-footer-logo-color);
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.27;
+}
+
+.footer a {
+  text-decoration: none;
 }
 
 .footer-logo,
@@ -120,13 +263,40 @@ h6 {
   color: var(--footer-logo-title-text-color);
 }
 
+.footer-logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
 .footer-text,
 .copyright {
   color: var(--secondary-logo-text-color);
+}
+
+.footer-text {
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 1.75;
 }
 
 .company-list a,
 .region-list a,
 .help-list a {
   color: var(--primary-footer-text-color);
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 2.1;
+}
+
+.company-title,
+.region-title,
+.help-title {
+  font-size: 20px;
+  line-height: 3;
 }
