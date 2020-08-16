@@ -1,0 +1,132 @@
+/* основной цвет лого #233348; */
+/* вторичный цвет лого #FFFFFF; */
+/* цвет навигации #1F1534; */
+/* основной цвет текста страницы #7D7987; */
+/* цвет заголовков #000000; */
+/* цвет акцента #458FF6; */
+/* белый цвет тестимониала #FFFFFF; */
+/* вторичный белый цвет тестимониала rgba(255, 255, 255, 0.85); */
+/* белый цвет описания тестимониала rgba(255, 255, 255, 0.9); */
+/* белый цвет лого и заголовков футера #FFFFFF; */
+/* вторичный цвет лого футера #5B9BF3; */
+/* основной цвет футера #FFFFFF; */
+/* цвет фона кнопки #ffffff; */
+
+:root {
+  --primary-logo-text-color: #233348;
+  --secondary-logo-text-color: #ffffff;
+  --nav-text-color: #1f1534;
+  --primary-text-color: #7d7987;
+  --title-text-color: #000000;
+  --accent-color: #458ff6;
+  --testimonial-white-text-color: #ffffff;
+  --secondary-testimonial-white-text-color: rgba(255, 255, 255, 0.85);
+  --testimonial-desc-white-text-color: rgba(255, 255, 255, 0.9);
+  --footer-logo-title-text-color: #ffffff;
+  --secondary-footer-logo-color: #5b9bf3;
+  --primary-footer-text-color: #ffffff;
+  --primary-bg-button-color: #458ff6;
+  --primary-button-text-color: #ffffff;
+  --secondary-bg-button-color: #ffffff;
+  --secondary-button-text-color: #458ff6;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* header */
+
+/* logo */
+.logo {
+  color: var(--primary-logo-text-color);
+}
+
+.logo-accennt {
+  color: red;
+}
+
+/* navigation */
+.nav-list .nav-item {
+  color: var(--nav-text-color);
+  opacity: 0.5;
+}
+
+.nav-list .nav-item.current {
+  color: #000000;
+  opacity: 1;
+}
+
+/* <!-- unique content --> */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-text-color);
+}
+
+.button {
+  color: var(--title-text-color);
+  /* color: var(--primary-button-text-color) */
+  /* background-color: var(--primary-bg-button-color) */
+  background-color: var(--secondary-bg-button-color);
+}
+
+.button.primary {
+  color: var(--primary-button-text-color);
+  background-color: var(--primary-bg-button-color);
+}
+
+.button.secondary {
+  color: var(--secondary-button-text-color);
+  background-color: var(--secondary-bg-button-color);
+}
+
+.customer-feedback {
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+}
+
+.testimonial-title,
+.customer-name {
+  color: var(--testimonial-white-text-color);
+}
+
+.customer-position,
+.customer-desc {
+  color: var(--testimonial-desc-white-text-color);
+}
+
+/* footer */
+.footer {
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+
+.logo-footer-accent {
+  color: var(--secondary-footer-logo-color);
+}
+
+.footer-logo,
+.company-title,
+.region-title,
+.help-title {
+  color: var(--footer-logo-title-text-color);
+}
+
+.footer-text,
+.copyright {
+  color: var(--secondary-logo-text-color);
+}
+
+.company-list a,
+.region-list a,
+.help-list a {
+  color: var(--primary-footer-text-color);
+}
